@@ -13,9 +13,12 @@ struct CustomColors {
 
     // couleur bouton
     static let lavenderMist = UIColor(red: 141.0/255.0, green: 113.0/255.0, blue: 181.0/255.0, alpha: 1.0)
+    
+    static let deepSkyBlue = UIColor(red: 104.0/255.0, green: 128.0/255.0, blue: 188.0/255.0, alpha: 1.0)
         
+    // Autre
     static let slateBlue = UIColor(red: 58.0/255.0, green: 55.0/255.0, blue: 91.0/255.0, alpha: 1.0)
     
     // Placeholder Color
-    static let steelGray = UIColor(red: 119.0/255.0, green: 114.0/255.0, blue: 138.0/255.0, alpha: 1.0)
+    static let steelGray = UIColor(red: 140.0/255.0, green: 133.0/255.0, blue: 165.0/255.0, alpha: 1.0)
 }
