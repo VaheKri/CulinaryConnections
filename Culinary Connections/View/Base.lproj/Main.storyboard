@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qLj-99-SjS">
     <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
@@ -7,6 +7,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="UBm-3q-fPy">
+            <objects>
+                <navigationController id="qLj-99-SjS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GH9-KQ-dcZ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KOj-bw-Hwp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QLN-Yf-dwE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-839" y="-654"/>
+        </scene>
         <!--Hello View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -214,7 +230,7 @@
                                             <color key="baseForegroundColor" red="0.40784313729999999" green="0.50196078430000002" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="zEN-BD-vJO" kind="presentation" modalPresentationStyle="fullScreen" id="kEs-jA-LiL"/>
+                                            <action selector="goToLoginScreen:" destination="eVD-ba-29v" eventType="touchUpInside" id="hJs-U5-0Iy"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFE-oQ-s2Y">
@@ -281,7 +297,7 @@
         <!--Login View Controller-->
         <scene sceneID="u1B-UF-oda">
             <objects>
-                <viewController id="zEN-BD-vJO" customClass="LoginViewController" customModule="Culinary_Connections" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="login" storyboardIdentifier="login" id="zEN-BD-vJO" customClass="LoginViewController" customModule="Culinary_Connections" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bkN-jN-vcY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -309,9 +325,6 @@
             <point key="canvasLocation" x="358" y="80"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="kEs-jA-LiL"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Dessert au Chocolat Fruité (1) (1)" width="729" height="729"/>
         <image name="Paneer Schezwan Bowl" width="1400" height="1400"/>

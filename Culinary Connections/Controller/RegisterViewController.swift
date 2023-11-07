@@ -37,6 +37,14 @@ class RegisterViewController: UIViewController {
         loginButton.layer.borderColor = CustomColors.deepSkyBlue.cgColor
     }
     
+    @IBAction func goToLoginScreen(_ sender: Any) {
+       
+        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "login") as? LoginViewController {
+                self.navigationController?  .pushViewController(vc, animated: true)
+            }
+    }
+    
+
     @IBAction func togglePasswordVisibility(_ sender: UIButton) {
         passwordTextField.isSecureTextEntry.toggle()
         
